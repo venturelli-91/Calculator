@@ -1,56 +1,55 @@
-Web Calculator
+<h1>Web Calculator</h1>
 
-A simple calculator built with HTML, CSS, and JavaScript.
+## A simple calculator built with HTML, CSS, and JavaScript.
 
-📌 Features
+## 📌 Features:
 
-Addition, subtraction, multiplication, and division.
+<strong>Addition, subtraction, multiplication, and division.
 
 Simple and responsive interface.
 
-Button to clear the display.
+Button to clear the display.</strong>
 
-🚀 Technologies Used
+## 🚀 Technologies Used
 
-HTML
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/>
+</div>
 
-CSS
+### 📷 Demonstration:
 
-JavaScript
+<strong>🔧 How to Run the Project </strong>
 
-📷 Demo
+- Clone this repository
 
+- git clone: https://github.com/venturelli-91/Calculator.git
 
+- Navigate to the project folder
 
-🔧 How to Run the Project
+- cd Calculator
 
-Clone this repository
+- <strong>Open the index.html file in your browser</strong>
 
-git clone https://github.com/your-username/web-calculator.git
-
-Navigate to the project folder
-
-cd web-calculator
-
-Open the index.html file in your browser
-
-📂 Project Structure
+## 📂 Project Structure
 
 web-calculator/
-│-- index.html      # Calculator structure
-│-- style.css       # Interface styling
-│-- script.js       # Calculator logic
+│-- index.html # Calculator structure
+│-- style.css # Interface styling
+│-- script.js # Calculator logic
 
-✨ Future Improvements
+## ✨ Future Improvements
 
-Add keyboard support.
+<strong>- Add keyboard support.
 
-Create a dark mode.
-
-Improve responsiveness for smaller devices.
+- Create a dark mode.
+- Improve responsiveness for smaller devices.
+- React and Hooks addition; </strong>
 
 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Made with ❤️ by Your Name 🚀
+Made by Aurélio Venturelli.
+
