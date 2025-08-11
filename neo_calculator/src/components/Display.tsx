@@ -1,8 +1,8 @@
 import React from "react";
 
-interface DisplayProps {
+export interface DisplayProps {
 	expression: string;
-	result?: string;
+	result: string;
 	error?: string;
 }
 
