@@ -2,6 +2,7 @@ import React from 'react';
 import Display from './Display';
 import Keypad from './Keypad';
 import { useCalculatorStore } from '../store/calculatorStore';
+import InputWindow from './InputWindow';
 
 const CalculatorContainer: React.FC = () => {
   const { displayValue, setDisplayValue, setOperator, setOperand, calculateResult, clear } =
@@ -25,6 +26,7 @@ const CalculatorContainer: React.FC = () => {
 
   return (
     <div className="max-w-xs mx-auto mt-10 p-4 bg-neutral-950 rounded-xl shadow-lg">
+      <InputWindow value={displayValue} onChange={setDisplayValue} />
       <Display value={displayValue} />
       <Keypad
         onNumberClick={handleNumberClick}

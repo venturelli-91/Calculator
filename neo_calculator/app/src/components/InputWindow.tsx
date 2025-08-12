@@ -12,7 +12,8 @@ const InputWindow: React.FC<InputWindowProps> = ({ value, onChange }) => {
         type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        placeholder="Digite aqui..."
+        placeholder="..."
+        className="w-full p-2 mb-4 text-right text-xl bg-gray-800 text-white rounded"
       />
     </div>
   );
