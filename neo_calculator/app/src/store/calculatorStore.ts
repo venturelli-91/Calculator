@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { CalculatorStore } from "./types";
+import { evaluate } from "mathjs";
 
 export const useCalculatorStore = create<CalculatorStore>((set) => ({
 	displayValue: "0",
@@ -14,10 +15,13 @@ export const useCalculatorStore = create<CalculatorStore>((set) => ({
 	setOperator: (operator) => set({ operator }),
 	setOperand: (operand) => set({ operand }),
 	calculateResult: () => {
-		// Implementação simplificada, ajuste conforme a lógica da calculadora
 		set((state) => {
-			const result = state.displayValue;
-			// ... lógica de cálculo ...
+			let result: string;
+			try {
+				result = evaluate(state.displayValue).toString();
+			} catch (error) {
+				result = "Erro";
+			}
 			return { result };
 		});
 	},
