@@ -19,7 +19,7 @@ export const useCalculatorStore = create<CalculatorStore>((set) => ({
 			let result: string;
 			try {
 				result = evaluate(state.displayValue).toString();
-			} catch (error) {
+			} catch {
 				result = "Erro";
 			}
 			return { result };
